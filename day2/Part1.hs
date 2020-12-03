@@ -1,5 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
-module Day2_1 where
+module Part1 where
 
 import System.IO  
 import Control.Monad

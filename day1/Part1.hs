@@ -1,4 +1,4 @@
-module Day1_1 where
+module Part1 where
 
 import System.IO  
 import Control.Monad
