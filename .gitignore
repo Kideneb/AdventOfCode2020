@@ -25,3 +25,5 @@ cabal.project.local~
 .devcontainer/
 
 *.txt
+
+.vscode/settings.json
