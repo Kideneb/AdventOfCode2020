@@ -31,10 +31,10 @@ getBag ((Bag s ys):xs) name
         | otherwise = getBag xs name 
 
 toBag :: String -> Bag
-toBag str = Bag (head splitted) amounts
+toBag str = Bag (head splitNameVal) amounts
         where 
-                splitted = splitOn " bags contain " (init str)
-                splitStr = splitOn ", " (splitted!!1)
+                splitNameVal = splitOn " bags contain " (init str)
+                splitStr = splitOn ", " (splitNameVal!!1)
                 amounts = foldl f ([] :: [(Int, String)]) splitStr
                 f xs y
                         | head y == 'n' = []
